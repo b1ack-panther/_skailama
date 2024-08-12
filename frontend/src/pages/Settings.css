@@ -1,0 +1,51 @@
+.settings-container > h1{
+  font-size: 2.1rem;
+  color: var(--PURPLE);
+  margin-bottom: 30px;
+}
+
+.settings-inputs{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  img{
+    height: 200px;
+    width: 200px;
+    border-radius: 100%;
+  }
+}
+
+.settings-name{
+  width: 400px;
+}
+
+h1.subscriptions-heading{
+  margin: 30px 0 15px 0 ;
+}
+
+.subscription-banner{
+  padding: 15px 30px;
+  background: linear-gradient(to right, #7E22CE 30%, #460281 100%);
+  border-radius: 10px;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+  a{
+    color: inherit;
+  }
+  button{
+    background-color: white;
+    color: var(--PURPLE);
+    padding: 10px 15px;
+  }
+}
+
+.cancel-subscription{
+  color: red;
+  font-weight: 500;
+  margin-left: 4px;
+}

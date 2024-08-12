@@ -1,0 +1,272 @@
+.project-upload {
+	padding: 0 40px;
+	padding-bottom: 10px;
+	max-height: 100vh;
+	overflow: scroll;
+	display: flex;
+	flex-direction: column;
+	gap: 20px;
+	width: 100%;
+	position: relative;
+}
+
+.project-upload::-webkit-scrollbar {
+	display: none;
+}
+
+.project-nav {
+	padding: 20px 0;
+	background-color: white;
+	position: sticky;
+	top: 0;
+	white-space: nowrap;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	width: 100%;
+}
+
+.project-nav-left,
+.project-nav-right {
+	display: flex;
+	align-items: center;
+	color: var(--PURPLE);
+	svg {
+		height: 35px;
+		width: 35px;
+	}
+	p,
+	a {
+		vertical-align: center;
+		font-size: 1.2rem;
+		font-family: var(--ROBOTO-FONT);
+		font-weight: 500;
+		color: var(--GREY);
+		margin-top: 2px;
+	}
+	a {
+		text-decoration: none;
+		color: var(--PURPLE);
+	}
+}
+
+.project-nav-left {
+	gap: 3px;
+	svg {
+		height: 30px;
+		color: var(--PURPLE);
+	}
+}
+
+.project-nav-right {
+	gap: 30px;
+}
+
+.lang {
+	display: flex;
+	align-items: center;
+	span {
+		margin-right: 5px;
+		font-weight: bold;
+		font-family: var(--ROBOTO-FONT);
+		color: black;
+		font-size: 1.1rem;
+	}
+}
+
+.upload-heading {
+	color: var(--PURPLE);
+	font-size: 2rem;
+	padding: 0 5px;
+	position: sticky;
+	top: 0;
+}
+
+.upload-option-list {
+	display: flex;
+	flex-wrap: wrap;
+	column-gap: max(3vw, 30px);
+	row-gap: 25px;
+}
+
+.upload-option {
+	min-width: 250px;
+	width: 335px;
+	display: flex;
+	gap: 20px;
+	padding: 5px;
+	border-radius: 10px;
+	border: 2px solid var(--LIGHT-GREY);
+	box-shadow: rgba(0, 0, 0, 0.15) 2.95px 2px 5.6px;
+	display: flex;
+	align-items: center;
+	cursor: pointer;
+
+	svg {
+		padding: 10px;
+	}
+	p {
+		font-weight: 500;
+		color: var(--BLACK);
+	}
+}
+
+.or {
+	margin: -5px auto;
+	color: var(--GREY);
+	font-size: 1.2rem;
+}
+
+.upload-cloud {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	border: 2px dotted var(--GREY);
+	border-radius: 10px;
+	padding-bottom: 15px;
+}
+
+.upload-text {
+	color: var(--BLACK);
+	margin-bottom: 3px;
+}
+.media-type {
+	font-size: 0.9;
+	color: var(--GREY);
+	margin-bottom: 20px;
+}
+.upload-btn {
+	background-color: white;
+	border-radius: 20px;
+	border: 2px solid var(--PURPLE);
+	padding: 10px 20px;
+	color: var(--PURPLE);
+}
+
+.rss-image {
+	width: 100px;
+	padding: 15px;
+	height: 100px;
+}
+
+.upload-box {
+	display: flex;
+	flex-direction: column;
+	gap: 20px;
+	color: var(--BLACK);
+}
+
+.upload-box-header {
+	display: flex;
+	align-items: center;
+	gap: 10px;
+
+	svg {
+		width: 50px;
+		height: 50px;
+	}
+}
+
+.upload-name,
+.upload-description {
+	display: flex;
+	flex-direction: column;
+	gap: 5px;
+
+	label {
+		font-weight: 500;
+		color: var(--BLACK);
+	}
+	input {
+		outline: none;
+		border-radius: 5px;
+		border: 1px solid var(--GREY);
+		padding: 10px;
+		font-size: 1rem;
+		font-weight: 500;
+		color: var(--BLACK);
+	}
+}
+
+.upload-modal-btn {
+	align-self: flex-end;
+	padding: 10px 20px;
+	background-color: var(--DARK-PURPLE);
+	color: white;
+}
+
+.try-it-out {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 10px 30px;
+	background-color: var(--PURPLE);
+	color: white;
+	width: 100%;
+	border-radius: 10px;
+	box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+
+	p {
+		cursor: context-menu;
+	}
+
+	button {
+		color: var(--BLACK);
+		padding: 10px 15px;
+	}
+}
+
+table {
+	width: 100%;
+	border-collapse: collapse;
+	text-align: center;
+}
+
+table tr {
+	border-bottom: 2px solid var(--LIGHT-GREY);
+}
+
+td,
+th {
+	padding: 5px;
+	vertical-align: middle;
+}
+
+th {
+	padding: 15px;
+}
+
+table tr:last-child {
+	border-bottom: none; /* Remove the border from the last row */
+}
+
+.table-container {
+	margin-top: 10px;
+	width: 100%;
+	border: 2px solid var(--LIGHT-GREY);
+	border-radius: 10px;
+	overflow: auto;
+	color: var(--BLACK);
+	font-weight: 500;
+	box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+}
+
+.table-btns {
+	border: 1px solid var(--LIGHT-GREY);
+	width: max-content;
+	margin: auto;
+	border-radius: 10px;
+	overflow: hidden;
+
+	button {
+		background-color: white;
+		padding: 15px 20px;
+	}
+
+	button:last-child {
+		color: red;
+		border-left: 1px solid var(--LIGHT-GREY);
+		border-radius: 0;
+		padding: 15px;
+	}
+}

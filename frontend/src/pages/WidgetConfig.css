@@ -1,0 +1,191 @@
+.widget-container > h1{
+  font-size: 2.4rem;
+  color: var(--PURPLE);
+  margin: 20px 0 30px;
+}
+
+.widget-btn{
+  background: white;
+  font-size: 1rem;
+  color: var(--BLACK);
+  padding: 10px 15px;
+  border-radius: 0;
+  transition: all 0.3s ease;
+}
+
+.widget-btn:hover{
+  background: #6e28ab28;
+}
+
+.widget-btn.active{
+  color: var(--PURPLE);
+}
+
+.widget-tabs{
+  border-bottom: 3px solid var(--LIGHT-GREY);
+  margin-bottom: 30px;
+  display: flex;
+}
+
+.general-tab{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  color: var(--BLACK);
+
+}
+
+.general-tab-input > *{
+  display: block;
+}
+
+.general-tab-input{
+  margin-bottom: 5px;  
+  min-width: 500px;
+  span{
+    color: var(--GREY);
+    font-size: 10px;
+    margin-top: 3px;
+  }
+
+  label{
+    font-weight: bold;
+    margin-bottom: 8px;
+    font-size: 1.05rem;
+  }
+
+  input{
+    border: 1px solid var(--GREY);
+    border-radius: 5px;
+    padding: 8px;
+    width: 100%;
+    outline: none;
+    font-weight: 400;
+    font-size: 0.9rem;
+    color: var(--BLACK);
+  }
+}
+
+.color-div{
+  width: 40px;
+  height: 40px;
+  flex-shrink: 0;
+  border: 1px solid var(--GREY);
+  border-radius: 4px;
+}
+
+.display-input-div{
+  input{
+    display: inline-block;
+  }
+  display: flex;
+  gap: 10px;
+}
+
+.up-section{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  column-gap: 80px;
+  border-bottom: 2px solid var(--LIGHT-GREY);
+  padding-bottom: 30px;
+  margin-bottom: 30px;
+  margin-top: -10px;
+  color: var(--BLACK);
+}
+
+.up-section > *{
+  flex: 1;
+}
+
+.display-tab-input > label{
+  margin-top: 8px;
+}
+
+.switch{
+  margin-top: 30px;
+}
+
+.down-section.up-section{
+  border-bottom: 0;
+}
+
+.tab-content{
+	position: sticky;
+	top: 0;
+}
+
+.primary-color{	
+  --PRIMARY-COLOR: #0a970a;
+  background-color: var(--PRIMARY-COLOR);
+}
+
+.font-color{	
+  --FONT-COLOR: #0f4d6c;
+  background-color: var(--FONT-COLOR);
+}
+
+h3.chat-icon{
+  color: var(--PURPLE);
+  margin-bottom: 30px;
+}
+
+#dropdown {
+  width: 100%;
+  padding: 5px;
+  background-color: white;
+  border: 2px solid var(--LIGHT-GREY);
+  border-radius: 5px;
+  color: var(--BLACK);
+  font-size: 0.9rem;
+  cursor: pointer;
+  transition: border-color 0.3s;
+}
+
+#dropdown option {
+  padding: 10px;
+  background-color: white;
+  color: #333;
+  cursor: pointer;
+  border: 1px solid var(--LIGHT-GREY);
+}
+
+.bot-icon-div{
+  margin-top: 20px;
+  h4{
+    margin-bottom: 10px;
+    margin-left: 20px;
+  }
+}
+
+.bot-icon-content{
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.bot-img{
+  background-image: url("https://cdn.vectorstock.com/i/1000v/31/67/robot-icon-bot-sign-design-chatbot-symbol-vector-27973167.jpg");
+  width: 100px;
+  height: 100px;
+  border-radius: 100%;
+  background-position: center;
+  background-size: 120%;
+  border: 1px solid var(--LIGHT-GREY);
+}
+
+.upload-bot-img{
+  display: flex;
+  align-items: center;
+  background-color: var(--PURPLE);
+  color: white;
+  padding: 10px 15px;
+  font-size: 14px;
+  gap: 10px;
+
+  svg{
+    width: 25px;
+    height: 25px;
+  }
+}
