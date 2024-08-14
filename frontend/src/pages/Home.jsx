@@ -70,6 +70,7 @@ const Home = () => {
 						<label htmlFor="email">Email</label>
 						<input type="text" name="email" />
 						{loginLoader ? <Spinner /> : <button type="submit">Login</button>}
+					{loginLoader && <p>Please wait... Server may take around 50 seconds on the first login.</p>}
 					</form>
 				</div>
 			)}
