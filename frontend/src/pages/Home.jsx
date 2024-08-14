@@ -92,7 +92,7 @@ const Home = () => {
 						</svg>
 						<span>Back to Home</span>
 					</button>
-					{!projectList.length ? (
+					{!projectList?.length ? (
 						<div className="home-main">
 							<h1>Create New Project</h1>
 							<svg
