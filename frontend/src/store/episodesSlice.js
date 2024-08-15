@@ -65,17 +65,3 @@ export const episodeApiSlice = apiSlice.injectEndpoints({
 export const { useGetEpisodesQuery, useAddNewEpisodeMutation, useUpdateEpisodeMutation, useDeleteEpisodeMutation } =
 	episodeApiSlice;
 
-const selectEpisodesResult = episodeApiSlice.endpoints.getEpisodes.select();
-
-const selectEpisodesData = createSelector(
-	selectEpisodesResult,
-	(episodeResult) => episodeResult.data
-);
-
-export const {
-	selectAll: selectAllEpisodes,
-	selectById: selectEpisodeById,
-	selectIds: selectEpisodeIds,
-} = episodeAdapter.getSelectors(
-	(state) => selectEpisodesData(state) ?? initialState
-);

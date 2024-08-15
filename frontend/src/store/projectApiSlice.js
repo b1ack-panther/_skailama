@@ -45,13 +45,3 @@ export const projectApiSlice = apiSlice.injectEndpoints({
 });
 
 export const { useGetProjectsQuery, useAddNewProjectMutation } = projectApiSlice;
-
-const selectProjectsResult = projectApiSlice.endpoints.getProjects.select();
-
-const selectProjectsData = createSelector(
-  selectProjectsResult, projectResult=>projectResult.data
-)
-
-export const { selectAll: selectAllProjects, selectById: selectProjectById, selectIds: selectProjectIds } = projectAdapter.getSelectors(
-  state=> selectProjectsData(state)??initialState
-);
