@@ -1,106 +1,112 @@
-.edit-transcript{
-  margin-top: 10px;
+.edit-transcript {
+	margin-top: 10px;
 }
 
-.transcript-header{
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  height: 40px;
+.transcript-header {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	height: 40px;
 
-  h2{
-    color: var(--PURPLE);
-    font-size: 2rem;
-    white-space: nowrap;
-  }
+	h2 {
+		color: var(--PURPLE);
+		font-size: 2rem;
+		white-space: nowrap;
+	}
 }
 
-.save-discard-btns > button{
-  padding: 10px 25px;
-  margin-left: 10px;
+.save-discard-btns {
+	display: flex;
+	align-items: center;
+	button {
+		padding: 10px 25px;
+		margin-left: 10px;
+	}
+  
 }
 
-.discard-btn{
-  border: 2px solid #ff0000b8;
-  border-radius: 5px;
-  color: #ff0000b8;
-  background-color: white;
+.discard-btn {
+	border: 2px solid #ff0000b8;
+	border-radius: 5px;
+	color: #ff0000b8;
+	background-color: white;
 }
 
-.save-exit-btn{
-  background-color: var(--DARK-PURPLE);
-  color: white;
-  border: 2px solid var(--DARK-PURPLE);
-  border-radius: 5px;
+.save-exit-btn {
+	background-color: var(--DARK-PURPLE);
+	color: white;
+	border: 2px solid var(--DARK-PURPLE);
+	border-radius: 5px;
 }
 
-.transcript-content{
-  margin-top: 30px;
-  border: 2px solid var(--PURPLE);
-  border-radius: 10px;
-  padding: 10px;
+.transcript-content {
+	margin-top: 30px;
+	border: 2px solid var(--PURPLE);
+	border-radius: 10px;
+	padding: 10px;
 }
 
-.edit-header{
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+.edit-header {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
 }
 
-.edit-mode{
-  display: flex;
-  align-items: center;
-  gap: 5px;
-  font-size: 14px;
-  border-radius: 20px;
-  background-color: var(--BLACK);
-  padding: 8px 12px;
-  color: white;
-  svg{
-    height: 17px;
-    width: 17px;
-  }
+.edit-mode {
+	display: flex;
+	align-items: center;
+	gap: 5px;
+	font-size: 14px;
+	border-radius: 20px;
+	background-color: var(--BLACK);
+	padding: 8px 12px;
+	color: white;
+	svg {
+		height: 17px;
+		width: 17px;
+	}
 }
 
-.edit-search{
-  background: #7e22ce32;
-  border-radius: 100%;
-  padding: 5px;
-  svg{
-    width: 22px;
-    height: 20px;
-  }
+.edit-search {
+	background: #7e22ce32;
+	border-radius: 100%;
+	padding: 5px;
+	svg {
+		width: 22px;
+		height: 20px;
+	}
 }
 
-.edit-description{
-  margin-top: 15px;
-  height: 450px;
-  overflow: scroll;
+.edit-description {
+	margin-top: 15px;
+	height: 450px;
+	overflow: scroll;
 
-  h3{
-    color: var(--PURPLE);
-    margin-bottom: 3px;    cursor: context-menu
-
-  }
-  p, .description-input{
-    font-size: 1rem;
-    line-height: 1.5;
-    letter-spacing: 0.5px;
-    color: var(--BLACK);
-  }
-  p{
-    cursor: context-menu
-  }
+	h3 {
+		color: var(--PURPLE);
+		margin-bottom: 3px;
+		cursor: context-menu;
+	}
+	p,
+	.description-input {
+		font-size: 1rem;
+		line-height: 1.5;
+		letter-spacing: 0.5px;
+		color: var(--BLACK);
+	}
+	p {
+		cursor: context-menu;
+	}
 }
 
-.edit-description::-webkit-scrollbar{
-  display: none;
+.edit-description::-webkit-scrollbar {
+	display: none;
 }
 
-.description-input{
-  width: 100%;
-  height: calc(100% - 50px);
-  border: none;
-  outline: none;
-  resize: none;
+.description-input {
+	width: 100%;
+	height: calc(100% - 50px);
+	border: none;
+	outline: none;
+	resize: none;
 }

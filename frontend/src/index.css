@@ -57,6 +57,7 @@ button {
 	width: 20px;
 	height: 20px;
 	animation: spin 1s linear infinite;
+	padding: 10px !important;
 }
 
 @keyframes spin {

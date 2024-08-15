@@ -15,8 +15,13 @@ const EditEpisode = () => {
 	const { user } = useSelector((state) => state.user);
 	const navigate = useNavigate();
 	const { state } = useLocation();
+	const [loading, setLoading] = useState(false);
 
-	const { data: episodeList, isSuccess } = useGetEpisodesQuery({
+	const {
+		data: episodeList,
+		isSuccess,
+		isLoading,
+	} = useGetEpisodesQuery({
 		projectId,
 		email: user.email,
 	});
@@ -38,6 +43,10 @@ const EditEpisode = () => {
 		setDescription(episode?.description);
 	}, [episode]);
 
+	useEffect(() => {
+		setLoading(editLoading || isLoading);
+	}, [editLoading, isLoading]);
+
 	const handleEditClick = () => {
 		setEdit(true);
 		setTimeout(() => {
@@ -46,7 +55,6 @@ const EditEpisode = () => {
 	};
 
 	const handleEditSubmit = () => {
-		setEdit(false);
 		editEpisode({ description, email: user.email, episodeId });
 	};
 
@@ -56,7 +64,7 @@ const EditEpisode = () => {
 				navigate(`/${projectId}/upload`, { state });
 			}
 		}
-	 }, [editSuccess, navigate, projectId, state])
+	}, [editSuccess, navigate, projectId, state]);
 
 	return (
 		<div className="edit-transcript">
@@ -67,7 +75,7 @@ const EditEpisode = () => {
 						<button onClick={() => setEdit(false)} className="discard-btn">
 							Discard
 						</button>
-						{editLoading ? (
+						{loading ? (
 							<Spinner />
 						) : (
 							<button className="save-exit-btn" onClick={handleEditSubmit}>

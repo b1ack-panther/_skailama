@@ -230,7 +230,7 @@ const ProjectUpload = () => {
 							<tr key={episode.id}>
 								<td>{episode.name}</td>
 								<td>
-									{new Intl.DateTimeFormat("en-us", options).format(new Date())}
+									{new Intl.DateTimeFormat("en-us", options).format(episode.createAt)}
 								</td>
 								<td>DONE</td>
 								<td>
